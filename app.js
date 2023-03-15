@@ -1,26 +1,35 @@
 alert ("Bienvenido socio de Cat Cafe! Ingrese sus datos de cuenta. Atencion! Solo hay tres intentos.");
 
-/* INGRESO A LA PAGINA */
+const usuario = {
+    nombre: 'micaela',
+    apellido: 'daltolo',
+    saveName: 'usuario',
+    savePass: '12345',
+    edad: 16,
+    saludo: function () {alert ("Bienvenido/a" + " " + usuario[nombre] + " " + usuario[apellido]);}
+}
 
-let savePass = "12345";
-let saveName = "usuario";
+/* INGRESO DE USUARIO */
 
 for (let i=0 ; i<3 ; i++){
     let userName = prompt ("Ingrese usuario:");
-    if (userName == saveName){
+    if (userName == usuario.saveName){
     break;
     }
     alert ("No se pudo completar el ingreso");
 } 
 
+/* INGRESO DE CONTRASENA */
+
 for (let i=0 ; i<3 ; i++){
     let userPass = prompt ("Ingrese contraseña:");
-    if (userPass == savePass){
+    if (userPass == usuario.savePass){
         alert ("Login exitoso, bienvenido!");
     break;
     }
     alert ("No se pudo completar el ingreso");
 }    
+
 
 /* SELECCION DE SUCURSAL */
 
