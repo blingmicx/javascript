@@ -1,5 +1,5 @@
 
-const usuario = {
+const cuenta = {
     nombre: 'micaela',
     apellido: 'daltolo',
     saveName: 'usuario',
@@ -8,13 +8,31 @@ const usuario = {
     saludo: function () {alert ("Bienvenido/a" + " " + usuario[nombre] + " " + usuario[apellido]);}
 }
 
+saludo();
+
 /* INGRESO DE CUENTA */
 
-function go(){
+function inicio(){
 
     if (document.form.password.value=='12345' && document.form.login.value=='usuario'){ 
-            document.form.submit(); 
+            document.form.submit();    
         
+        mostrar();
+
+        }    
+            else{ 
+    document.body.append('Usuario o contraseña incorrectos, ingrese de nuevo.');
+    }
+    
+}
+    inicio();
+
+
+/* 
+    }
+
+function mostrar(){          
+
 let contenedorTarjetas = document.querySelector('.contenedorTarjetas');
 
 let sucursales = [{
@@ -48,17 +66,10 @@ for (const item of sucursales) {
     </div>
     <div class="card-footer"><a href="#" class="btn btn-primary">Pedir turno.</a></div>`;
     contenedorTarjetas.append(tarjeta)
-}
-
 
 }
-
-    else{ 
-    document.body.append('Usuario o contraseña incorrectos, ingrese de nuevo.');
-    }
-    
-}
-
+} 
+*/
 
 
 
@@ -101,3 +112,12 @@ switch (sucursal){
 }  */
 
 
+/* 
+
+funtion saludar(nomnbre){
+    alert('buenas tardes' + nombre)
+}
+
+saludar(user);
+
+*/

@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(249, 216, 255);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    max-width: 330px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+form {
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+}
+
